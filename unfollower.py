@@ -12,8 +12,8 @@ driver = webdriver.Firefox(options=firefox_options)
 driver.get("https://github.com/login")
 
 # Sign in to GitHub
-username = ""
-password = ""
+username = "" #add your username
+password = "" #add your password
 
 driver.find_element(By.CSS_SELECTOR, "#login_field").send_keys(username)
 driver.find_element(By.ID, "password").send_keys(password)
